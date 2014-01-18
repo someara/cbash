@@ -1,6 +1,6 @@
 #!/bin/bash
 
-format="%-35s %-30s %10s\n"
+format="%-35s %-35s %10s\n"
 # group space should exist
 getent group space | cut -d: -f1 | grep -q ^space$
 if [ $? -eq 0 ]; then
