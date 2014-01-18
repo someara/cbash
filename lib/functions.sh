@@ -11,10 +11,14 @@ function group() {
     local group="$1" ; local gid="$2"
 
     getent group | awk -F':' '{ print $1 }' | grep -q ^${group}$
-    if [ $? -ne 0 ] ; then groupadd ${group} ; fi
+    if [ $? -ne 0 ] ; then
+        groupadd ${group}
+    fi
 
     getent group | awk -F':' '{ print $3 }' | grep -q ^${gid}$
-    if [ $? -ne 0 ] ; then groupmod -g ${gid} ${group} ; fi
+    if [ $? -ne 0 ] ; then 
+        groupmod -g ${gid} ${group} 
+    fi
 }
 
 function user() {
