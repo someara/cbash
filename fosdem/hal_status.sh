@@ -35,7 +35,7 @@ if [ $? -eq 0 ]; then
 else
     state='OFFLINE'
 fi
-printf "$format" "user hal uid" "'9009'" "$state"
+printf "$format" "user hal uid" "'9000'" "$state"
 
 # user hal should have gid 2001
 getent passwd hal | cut -d: -f4 | grep -q ^2001$
@@ -89,4 +89,4 @@ if [ $? -eq 0 ]; then
 else
     state='OFFLINE'
 fi
-printf "$format" "file" "/home/hal/files/the_pod_doors" "$state"
+printf "$format" "update_file /mnt/dist/hal/the_pod_doors" "'/home/hal/files/the_pod_doors'" "$state"
