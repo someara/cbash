@@ -17,7 +17,7 @@ if [ $? -eq 0 ]; then
 else
     state='OFFLINE'
 fi
-printf "$format" "gid" "'2001'" "$state"
+printf "$format" "group space gid" "'2001'" "$state"
 
 # user hal should exist
 getent passwd hal | cut -d: -f1 | grep -q ^hal$
@@ -35,7 +35,7 @@ if [ $? -eq 0 ]; then
 else
     state='OFFLINE'
 fi
-printf "$format" "uid" "'9009'" "$state"
+printf "$format" "user hal uid" "'9009'" "$state"
 
 # user hal should have gid 2001
 getent passwd hal | cut -d: -f4 | grep -q ^2001$
@@ -44,7 +44,7 @@ if [ $? -eq 0 ]; then
 else
     state='OFFLINE'
 fi
-printf "$format" "gid" "'2001'" "$state"
+printf "$format" "user hal gid" "'2001'" "$state"
 
 # directory /home/hal/files should exist
 test -d /home/hal/files
