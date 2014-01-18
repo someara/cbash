@@ -16,7 +16,8 @@ directory /home/hal/files \
     2001 \
     0755
 
-update_file /mnt/dist/hal/the_pod_doors \
+update_file /dist/hal/the_pod_doors \
     /home/hal/files/the_pod_doors
+
 
 

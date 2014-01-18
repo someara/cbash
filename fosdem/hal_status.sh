@@ -89,4 +89,4 @@ if [ $? -eq 0 ]; then
 else
     state='OFFLINE'
 fi
-printf "$format" "update_file /mnt/dist/hal/the_pod_doors" "'/home/hal/files/the_pod_doors'" "$state"
+printf "$format" "update_file /dist/hal/the_pod_doors" "'/home/hal/files/the_pod_doors'" "$state"
