@@ -12,7 +12,7 @@ directory /home/hal/files \
 user hal \
     9000 \
     2001 \
-    'I am afraid I can not do that dave' \
+    'My mind is going. I can feel it.' \
     /home/hal \
     /bin/bash
 

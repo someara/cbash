@@ -7,7 +7,7 @@ group space \
 user hal \
     9000 \
     2001 \
-    'My mind is going. I can feel it.' \
+    'What are you doing, Dave?' \
     /home/hal \
     /bin/bash
 
