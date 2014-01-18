@@ -12,12 +12,11 @@ user hal \
     /bin/bash
 
 directory /home/hal/files \
-    hal \
+    hal  \
     2001 \
     0755
 
 update_file /mnt/dist/hal/the_pod_doors \
-    /home/hal/files/
-
+    /home/hal/files/the_pod_doors
 
 
