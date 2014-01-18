@@ -10,7 +10,7 @@ fi
 test -f /etc/http/conf/httpd.conf
 if [ $? -ne 0 ]; then
     # action
-    cp /mnt/dist/http/httpd.conf    
+    cp /dist/http/httpd.conf    
 fi
 
 # test

@@ -10,7 +10,7 @@ fi
 test -f /etc/ntp.conf
 if [ $? -ne 0 ]; then
     # action
-    cp /mnt/dist/ntp/ntp.conf    
+    cp /dist/ntp/ntp.conf    
 fi
 
 # test
